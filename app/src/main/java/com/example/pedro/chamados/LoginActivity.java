@@ -28,6 +28,8 @@ public class LoginActivity extends AppCompatActivity {
 
         if (login.getText().toString().equals("admin") && senha.getText().toString().equals("admin")){
             Intent verMeusChamadosActivity = new Intent(LoginActivity.this, PrincipalActivity.class);
+            startActivity(verMeusChamadosActivity);
+            finish();
         } else {
             Toast.makeText(this, "Login e/ou Senha incorretos", Toast.LENGTH_SHORT).show();
         }
